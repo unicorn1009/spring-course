@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    使用当前配置文件作为主配置文件, 用于包含其他配置文件, 一般该文件不声明bean, 使用import标签引入其他配置文件-->
+<!--    需要使用classpath指定其他文件的位置-->
+<!--    <import resource="classpath:ba01/spring-employee.xml" />-->
+<!--    <import resource="classpath:ba01/spring-company.xml" />-->
+
+<!--    也可使用通配符*-->
+    <import resource="classpath:ba01/spring-*.xml" />
+</beans>

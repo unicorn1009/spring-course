@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--    引用数据类型属性 : ref-->
+    <bean id="employee" class="com.unicorn.entity.Employee" >
+        <property name="name" value="李四" />
+        <property name="age" value="32" />
+        <property name="company" ref="company" />
+    </bean>
+
+
+<!--    为了简化引用类型属性的注入-->
+<!--    spring框架根据某些规则可以给引用类型赋值-->
+<!--    使用的规则常用的有: byName, byType-->
+<!--    1. byName : 规则是, 该引用类型属性的属性名与spring容器中bean的id一致且类型相同,则会自动赋值 -->
+    <!-- Employee类中有个叫company的属性, 那么spring会去容器中找id叫company的bean给该属性赋值(需要类型一致,均为Company类型) -->
+    <bean id="employee1" class="com.unicorn.entity.Employee" autowire="byName">
+        <property name="name" value="李四" />
+        <property name="age" value="32" />
+    </bean>
+    <bean id="company" class="com.unicorn.entity.Company">
+        <property name="name" value="百度"/>
+        <property name="address" value="北京市海淀区"/>
+    </bean>
+
+    <!--    1. byType : 规则是, 该引用类型属性的属性名与spring容器中bean的id一致且类型相同,则会自动赋值 -->
+    <!-- Employee类中有个叫company的属性, 那么spring会去容器中找id叫company的bean给该属性赋值(需要类型一致,均为Company类型) -->
+    <bean id="employee2" class="com.unicorn.entity.Employee" autowire="byName">
+        <property name="name" value="李四" />
+        <property name="age" value="32" />
+    </bean>
+    <bean id="company2" class="com.unicorn.entity.Company">
+        <property name="name" value="百度"/>
+        <property name="address" value="北京市海淀区"/>
+    </bean>
+
+
+</beans>

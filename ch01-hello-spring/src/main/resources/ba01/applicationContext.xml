@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="student" class="com.unicorn.entity.Student" />
+<!--    DI给属性赋值-->
+<!--    方式一 : set注入, 也称设置注入(注入就是赋值的意思)-->
+    <!--    该方法是spring调用类的set方法, 你可以在set方法中完成属性赋值-->
+    <!--    1. 简单属性 : value-->
+    <bean id="student1"  class="com.unicorn.entity.Student" >
+        <property name="name" value="张三" />       <!--  实际调用了setName("张三")-->
+        <property name="age" value="23" />
+     </bean>
+    <!--    2. 引用数据类型属性 : ref-->
+    <bean id="employee" class="com.unicorn.entity.Employee" >
+        <property name="name" value="李四" />
+        <property name="age" value="32" />
+        <property name="company" ref="company" />
+    </bean>
+    <bean id="company" class="com.unicorn.entity.Company">
+        <property name="name" value="腾讯"/>
+        <property name="address" value="深圳市南山区"/>
+    </bean>
+
+    <!--    方式二 : 构造注入-->
+    <!--    该方法是spring调用类的有参构造函数, 你可以在set方法中完成属性赋值-->
+    <!--    一个constructor-arg标签表示构造方法的一个参数, name 和 index属性值可选其一-->
+    <bean id="student2"  class="com.unicorn.entity.Student" >
+        <constructor-arg name="name" index="0" value="王五" />
+        <constructor-arg name="age" index="1" value="25" />
+    </bean>
+</beans>

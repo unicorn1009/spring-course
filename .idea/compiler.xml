@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="mb05-dynamic-sql" />
+        <module name="ch04-aop-aspectJ" />
+        <module name="mb03-mybatis-parameter" />
+        <module name="mb02-mybatis-dao" />
+        <module name="ch01-hello-spring" />
+        <module name="ch05-spring-mybatis" />
+        <module name="mb01-hello-mybatis" />
+        <module name="ch02-mulitconfig" />
+        <module name="mb04-mybatis-like" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ch01-hello-spring" target="1.8" />
+      <module name="ch02-mulitconfig" target="1.8" />
+      <module name="ch03-annotation" target="1.8" />
+      <module name="ch04-aop-aspectJ" target="1.8" />
+      <module name="ch05-spring-mybatis" target="1.8" />
+      <module name="mb01-hello-mybatis" target="1.8" />
+      <module name="mb02-mybatis-dao" target="1.8" />
+      <module name="mb03-mybatis-parameter" target="1.8" />
+      <module name="mb04-mybatis-like" target="1.8" />
+      <module name="mb05-dynamic-sql" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

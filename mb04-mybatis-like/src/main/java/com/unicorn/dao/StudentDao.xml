@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.unicorn.dao.StudentDao">
+
+<!--    like模糊查询第一种方式 : 直接在java代码中写模糊查询条件 -->
+    <select id="selectStudentLikeName" resultType="com.unicorn.domain.Student">
+        select id, name, age, email from student where name like #{name}
+    </select>
+
+    <!--    like模糊查询第二种方式 : 在mapper文件中用空格拼接like查询条件 -->
+    <select id="selectStudentLikeName" resultType="com.unicorn.domain.Student">
+        select id, name, age, email from student where name like "%" #{name} "%"
+    </select>
+
+</mapper>

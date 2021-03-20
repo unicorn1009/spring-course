@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ch01-hello-spring/ch01-hello-spring.iml" filepath="$PROJECT_DIR$/ch01-hello-spring/ch01-hello-spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch02-mulitconfig/ch02-mulitconfig.iml" filepath="$PROJECT_DIR$/ch02-mulitconfig/ch02-mulitconfig.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch04-aop-aspectJ/ch04-aop-aspectJ.iml" filepath="$PROJECT_DIR$/ch04-aop-aspectJ/ch04-aop-aspectJ.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ch05-spring-mybatis/ch05-spring-mybatis.iml" filepath="$PROJECT_DIR$/ch05-spring-mybatis/ch05-spring-mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mb01-hello-mybatis/mb01-hello-mybatis.iml" filepath="$PROJECT_DIR$/mb01-hello-mybatis/mb01-hello-mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mb02-mybatis-dao/mb02-mybatis-dao.iml" filepath="$PROJECT_DIR$/mb02-mybatis-dao/mb02-mybatis-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mb03-mybatis-parameter/mb03-mybatis-parameter.iml" filepath="$PROJECT_DIR$/mb03-mybatis-parameter/mb03-mybatis-parameter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mb04-mybatis-like/mb04-mybatis-like.iml" filepath="$PROJECT_DIR$/mb04-mybatis-like/mb04-mybatis-like.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mb05-dynamic-sql/mb05-dynamic-sql.iml" filepath="$PROJECT_DIR$/mb05-dynamic-sql/mb05-dynamic-sql.iml" />
+    </modules>
+  </component>
+</project>

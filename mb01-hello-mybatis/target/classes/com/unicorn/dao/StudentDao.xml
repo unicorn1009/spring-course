@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.unicorn.dao.StudentDao">
+
+    <!--
+        select 表示查询操作
+        id : 你要执行的sql语句的唯一标识, mybatis会使用这个值来找到执行的sql语句, 可以自定义, 但强烈建议使用接口中的方法名称
+        resultType : 表示结果类型, 是sql语句执行后得到的ResultSet, 遍历这个ResultSet得到的java对象的类型, 填写的是类型的全限定名称
+    -->
+    <select id="selectAllStudent" resultType="com.unicorn.domain.Student">
+        select id, name, age, email from student order by id;
+    </select>
+
+    <insert id="insertStudent">
+        insert into student values (#{id}, #{name}, #{email}, #{age})
+    </insert>
+
+</mapper>
+
+
+<!--
+    1. mysql 映射文件 : 写sql语句的, 没有mybatis会执行语句
+    2. mapper标签 : 是当前文件的根标签, 不可更改
+        namespace : 命名空间, 唯一的, 要求填入使用的dao接口的全限定名称
+    3. 在mapper内可以使用特定标签表示数据库的特定操作
+        <select> : 查询
+        <update> : 更新(修改)
+        <insert> : 插入
+        <delete> : 删除
+-->

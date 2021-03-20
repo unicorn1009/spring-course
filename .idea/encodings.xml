@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/ch01-hello-spring/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch01-hello-spring/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch02-mulitconfig/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch02-mulitconfig/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch04-aop-aspectJ/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch04-aop-aspectJ/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ch05-spring-mybatis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mb01-hello-mybatis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mb01-hello-mybatis/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mb02-mybatis-dao/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mb03-mybatis-parameter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mb04-mybatis-like/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mb05-dynamic-sql/src/main/java" charset="UTF-8" />
+  </component>
+</project>

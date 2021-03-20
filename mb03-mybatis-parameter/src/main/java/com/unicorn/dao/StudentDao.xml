@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.unicorn.dao.StudentDao">
+
+<!--    传递一个简单参数, #{任意字符}即可, mybatis会通过反射获取参数类型-->
+    <select id="getStudentById" resultType="Student">
+        select id, name, age, email from student where id = #{abc}
+    </select>
+
+<!--    传递多个参数, 使用命名参数, @Param("命名参数") -> #{myname} -->
+    <select id="getStudent" resultType="Student">
+        select  id, name, age, email from student where name = #{myname} or age >=#{myage}
+    </select>
+
+<!--    使用对象传递多个参数, 对象的属性值就是参数的值, #{}中填写属性名称 -->
+    <insert id="insertStudent">
+        insert into student values(#{id}, #{name}, #{email}, #{age})
+    </insert>
+
+
+<!--返回map的时候需要注意返回结果最多只能是一行-->
+    <select id="getStudentMap" resultType="java.util.HashMap">
+        select name, age from student where id=#{iaaa}
+    </select>
+
+
+</mapper>

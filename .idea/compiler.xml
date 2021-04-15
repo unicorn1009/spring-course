@@ -16,6 +16,7 @@
         <module name="mb01-hello-mybatis" />
         <module name="ch02-mulitconfig" />
         <module name="mb04-mybatis-like" />
+        <module name="ssm01-hello-ssm" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -30,6 +31,7 @@
       <module name="mb03-mybatis-parameter" target="1.8" />
       <module name="mb04-mybatis-like" target="1.8" />
       <module name="mb05-dynamic-sql" target="1.8" />
+      <module name="ssm01-hello-ssm" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

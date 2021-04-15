@@ -16,9 +16,11 @@
         <!--       resource:从类路径开始(target/classes) -->
         <!--        <mapper resource="com/unicorn/dao/StudentDao.xml"/>-->
 
-        <!--        使用package标签, 指定包下所有xml文件都会被扫描-->
+        <!--        使用package标签, 指定包下所有xml文件都会被扫描, 要求mapper文件名与dao接口名一致,包括大小写-->
         <package name="com.unicorn.dao"/>
     </mappers>
+
+
 </configuration>
 
         <!--

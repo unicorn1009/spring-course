@@ -15,5 +15,6 @@
     <file url="file://$PROJECT_DIR$/mb03-mybatis-parameter/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mb04-mybatis-like/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mb05-dynamic-sql/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ssm01-hello-ssm/src/main/java" charset="UTF-8" />
   </component>
 </project>

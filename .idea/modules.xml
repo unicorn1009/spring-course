@@ -12,6 +12,7 @@
       <module fileurl="file://$PROJECT_DIR$/mb03-mybatis-parameter/mb03-mybatis-parameter.iml" filepath="$PROJECT_DIR$/mb03-mybatis-parameter/mb03-mybatis-parameter.iml" />
       <module fileurl="file://$PROJECT_DIR$/mb04-mybatis-like/mb04-mybatis-like.iml" filepath="$PROJECT_DIR$/mb04-mybatis-like/mb04-mybatis-like.iml" />
       <module fileurl="file://$PROJECT_DIR$/mb05-dynamic-sql/mb05-dynamic-sql.iml" filepath="$PROJECT_DIR$/mb05-dynamic-sql/mb05-dynamic-sql.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ssm01-hello-ssm/ssm01-hello-ssm.iml" filepath="$PROJECT_DIR$/ssm01-hello-ssm/ssm01-hello-ssm.iml" />
     </modules>
   </component>
 </project>
